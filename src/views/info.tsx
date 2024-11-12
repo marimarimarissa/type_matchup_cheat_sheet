@@ -1,6 +1,6 @@
-import { Pokemon } from "../models/pokemon";
-import { capitalizeFirstLetter } from "../composables/displayer";
-import { getTypeConstant, getTypeSprite } from "../composables/typeParser";
+import { Pokemon } from "../models/pokemon.ts";
+import { capitalizeFirstLetter } from "../composables/displayer.ts";
+import { getTypeConstant, getTypeSprite } from "../composables/typeParser.ts";
 
 export default function PokemonInfo(pokemon: Pokemon) {
     function Pokemon_Types(){

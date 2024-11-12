@@ -1,5 +1,5 @@
-import { Pokemon, Sprites } from '../models/pokemon'
-import { getTypeConstant } from './typeParser'
+import { Pokemon, Sprites } from '../models/pokemon.ts'
+import { getTypeConstant } from './typeParser.ts'
 
 export function createPokemon(obj: any): Pokemon {
     const poke_types = getTypes(obj.types)

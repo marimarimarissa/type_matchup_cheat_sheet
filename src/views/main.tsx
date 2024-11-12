@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios';
-import { Pokemon } from '.././models/pokemon';
+import { Pokemon } from '.././models/pokemon.ts';
 import { createPokemon } from '../composables/pokemonCreator.ts'
 import PokemonInfo from './info.tsx';
 
