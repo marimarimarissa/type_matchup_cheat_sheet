@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marimarimarissa.github.io/type_matchup_cheat_sheet/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
