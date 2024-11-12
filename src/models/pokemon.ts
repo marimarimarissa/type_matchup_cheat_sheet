@@ -4,7 +4,7 @@ export interface Pokemon {
     moves: Move[],
     sprites: Sprites,
     stats: Stat[],
-    types: [],
+    types: any[],
 }
 
 export interface Ability {

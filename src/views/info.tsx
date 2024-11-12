@@ -23,11 +23,11 @@ export default function PokemonInfo(pokemon: Pokemon) {
     }
 
     function Damage_Relations(){
-      let weaknesses_2x = [];
-      let weaknesses_4x = [];
-      let resistances_2x = [];
-      let resistances_4x = [];
-      let immunities = [];
+      let  weaknesses_2x: any[]  = [];
+      let weaknesses_4x: any[] = [];
+      let resistances_2x: any[] = [];
+      let resistances_4x: any[] = [];
+      let immunities: any[] = [];
     
       if(pokemon?.types.length > 0) {
         weaknesses_2x = [];
@@ -114,7 +114,7 @@ export default function PokemonInfo(pokemon: Pokemon) {
             <>
               <div>
                 <h2>Weakness:</h2>
-                {weaknesses_2x.map(function(weakness_2x, i)
+                {weaknesses_2x.map(function(weakness_2x)
                   {
                     return <img src={weakness_2x}/>;
                   }
@@ -132,7 +132,7 @@ export default function PokemonInfo(pokemon: Pokemon) {
             <>
               <div>
                 <h2>2x Weakness:</h2>
-                {weaknesses_4x.map(function(weakness_4x, i)
+                {weaknesses_4x.map(function(weakness_4x)
                   {
                     return <img src={weakness_4x}/>;
                   }
@@ -151,7 +151,7 @@ export default function PokemonInfo(pokemon: Pokemon) {
             <>
               <div>
                 <h2>Resistances:</h2>
-                {resistances_2x.map(function(resistance, i)
+                {resistances_2x.map(function(resistance)
                   {
                     return <img src={resistance}/>;
                   }
@@ -168,7 +168,7 @@ export default function PokemonInfo(pokemon: Pokemon) {
             <>
               <div>
                 <h2>2x Resistances:</h2>
-                {resistances_4x.map(function(resistance, i)
+                {resistances_4x.map(function(resistance)
                   {
                     return <img src={resistance}/>;
                   }
@@ -185,7 +185,7 @@ export default function PokemonInfo(pokemon: Pokemon) {
             <>
               <div>
                 <h2>Immunities:</h2>
-                {immunities.map(function(immunity, i)
+                {immunities.map(function(immunity)
                   {
                     return <img src={immunity}/>;
                   }

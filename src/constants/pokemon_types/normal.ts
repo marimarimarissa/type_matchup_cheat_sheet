@@ -1,4 +1,4 @@
-export const NORMAL = {
+export const NORMAL: any = {
     "damage_relations": {
       "double_damage_from": [
         {
